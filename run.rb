@@ -107,7 +107,7 @@ puts ""
                                     then system ""                 #don't forget this scrite
                                   elsif
                                     webapplication == "4-4"
-                                     then system "dr.pl"
+                                     then system "perl dr.pl"
                                   elsif
                                     webapplication == "4-6"
                                      then system ""                 # don't forget this scripte
