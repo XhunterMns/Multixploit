@@ -1,0 +1,201 @@
+#!/usr/bin/env ruby
+  
+  #first scripte ruby language i hope u like it copyrights:Xhunter Mns
+  #please do not change any of scriptes name 
+puts""  
+puts"[+] Welcome to Mutlixploit v 1.0 [+]"
+puts""
+puts"     ##coded by X-Hunter Mns## "
+puts""
+
+puts""
+puts "1) install metasploit 32bit"
+puts""
+puts "2) install metasploit 64bit"
+puts""
+puts "3) wirless_attack tools"
+puts""
+puts "4) webapplication attack tools"
+puts""
+puts "5) scanning tools"
+puts""
+puts "6) zone-h mass poster"
+puts ""
+puts "7) Exit"
+puts ""
+print"select your choice > "
+choice = gets.chomp
+print "" #{choice}
+ 
+                       if choice == ""
+                          then  system "ruby run.rb"
+                       elsif choice == "1"
+                          then system "wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-installer.run && wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-installer.run.sha1 && echo $(cat metasploit-latest-linux-installer.run.sha1)'  'metasploit-latest-linux-installer.run > metasploit-latest-linux-installer.run.sha1 && shasum -c metasploit-latest-linux-installer.run.sha1 && chmod +x ./metasploit-latest-linux-installer.run && sudo ./metasploit-latest-linux-installer.run"
+                       elsif choice == "2"
+                          then system  "wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-installer.run && wget https://downloads.metasploit.com/data/releases/metasploit-latest-linux-installer.run.sha1 && echo $(cat metasploit-latest-linux-installer.run.sha1)'  'metasploit-latest-linux-installer.run > metasploit-latest-linux-installer.run.sha1 && shasum -c metasploit-latest-linux-installer.run.sha1 && chmod +x ./metasploit-latest-linux-installer.run && sudo ./metasploit-latest-linux-installer.run" 
+                       elsif choice == "3"
+                          then
+puts ""
+ puts "3-0 aircrack"
+ puts ""
+ puts "3-1) wifite v 1.0"
+ puts ""
+ puts "3-2) fluxion"
+ puts ""
+ puts "3-3) ghost phisher"
+ puts ""
+ puts "3-4) pixiewps"
+ puts""
+ puts"3-5) back <<"
+ puts""
+ print"select your choice > "
+ puts"" 
+ wireless = gets.chomp
+     
+                              if wireless == "3-0"
+                                   then system "sudo apt install aircrack-ng"
+                            elsif wireless == "3-1"
+                                   then system "git clone https://github.com/derv82/wifite"   
+                            elsif  wireless == "3-2" 
+                                   then system "wget https://raw.githubusercontent.com/FluxionNetwork/fluxion/master/install/install.sh && bash install.sh"             
+                            elsif wireless == 3-3
+                                   then system "https://github.com/savio-code/ghost-phisher"
+                            elsif wireless == 3-4
+                                   then system "git clone https://github.com/wiire/pixiewps" 
+                            elsif wireless == 3-5
+                                   then system "ruby run.rb" 
+                            elsif wireless == ""
+                                   then
+                            system "ruby run.rb"
+
+                              end
+  elsif                      
+ choice == "4" #webapps attack
+ then
+     puts ""
+     puts "4-1)wordpress revslider mass shell upload"
+     puts ""
+     puts "4-2)joomla com_mezun sql injection"
+     puts ""
+     puts "4-2)opencart brute force"
+     puts ""
+     puts "4-3)cms grabber from ip"
+     puts ""
+     puts "4-4)Gs bing dorker"
+     puts ""
+     puts "4-5)joomla foxcontact shell upload"
+     puts ""
+     puts "4-6)Drupal exploit add admin"
+     puts ""
+     puts "4-7)back <<"
+     puts ""
+     print "select your choice > "
+       
+       webapplication = gets.chomp
+         
+                                if webapplication == "4-1"
+                                    then
+                                       system "perl wp.pl"
+                                  elsif 
+                                    webapplication == "4-2"
+                                    then
+                                        system "perl jom.pl"
+                                  elsif 
+                                    webapplication == "4-3"
+                                    then system ""                 #don't forget this scrite
+                                  elsif
+                                    webapplication == "4-4"
+                                     then system "dr.pl"
+                                  elsif
+                                    webapplication == "4-6"
+                                     then system ""                 # don't forget this scripte
+                                  elsif
+                                    webapplication == "4-7"
+                                     then system "run.rb" and system "clear"                              
+                                   end
+elsif
+  choice == "5"
+  puts""
+  puts"5-1)jump to nmap"
+  puts""
+  puts"5-2)Scan server From ip"
+  puts""
+  puts"5-3)wp scan"
+  puts""
+  puts"5-4)joomscan"
+  puts""
+  puts"5-5)back <<"
+  puts""
+  print"select your choice > "
+scan = gets.chomp
+
+                                  if scan == "5-1"
+                                    then system "nmap"
+                                  elsif 
+                                    scan == "5-2"
+                                    then system "python Tn-Scan.py"
+                                  elsif 
+                                    scan == "5-3"
+                                    then system "git clone github.com/wpscanteam/wpscan"
+                                  elsif 
+                                    scan == "5-4"
+                                    then system "git clone github.com/rezasp/joomscan"
+                                  elsif 
+                                    scan == "5-5"
+                                    then system "run ruby.rb"
+                                  end
+   elsif choice == "6"
+    then
+    puts""
+    puts"6-1)zone-h poster(you need to create file.txt where you will put your websites)"
+    puts""
+    puts"6-2)back <<"
+    puts""
+    print "select your choice > "
+
+    zone = gets.chomp
+
+                    if zone == "6-1"
+                      then system "perl zone.pl"
+                    elsif 
+                       zone == "6-2"
+                      then system "ruby run.rb"
+                    end
+
+elsif choice == "7"
+ then print "are you sure you want to exit? [ yes / no ]"
+exit =gets.chomp
+if exit == yes
+   then print "Good bye !"
+ else
+  system "ruby run.pl"
+end
+
+
+  
+
+
+                                    
+                                    
+
+                                    
+
+
+                                    
+                                    
+
+                                    
+                          
+
+  
+
+
+
+
+
+
+
+    end
+
+      
+    
