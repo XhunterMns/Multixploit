@@ -21,7 +21,9 @@ puts "5) scanning tools"
 puts""
 puts "6) zone-h mass poster"
 puts ""
-puts "7) Exit"
+puts "7) payloads"
+puts ""
+puts "8) Exit"
 puts ""
 print"select your choice > "
 choice = gets.chomp
@@ -161,8 +163,18 @@ scan = gets.chomp
                        zone == "6-2"
                       then system "ruby run.rb"
                     end
+  elsif choice == "7"
+  puts ""                     
+  puts "[*]under constructions"
+  puts ""
+  puts "0)back <<"
+  print "select your choice > "
+ payload = gets.chomp 
+ if payload == "0"
+  then system "ruby run.rb"
+end
 
-elsif choice == "7"
+elsif choice == "8"
  then print "are you sure you want to exit? [ yes / no ]"
 exit =gets.chomp
 if exit == yes
