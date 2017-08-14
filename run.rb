@@ -51,7 +51,7 @@ puts ""
  puts"3-5) back <<"
  puts""
  print"select your choice > "
- puts"" 
+  
  wireless = gets.chomp
      
                               if wireless == "3-0"
@@ -60,17 +60,13 @@ puts ""
                                    then system "git clone https://github.com/derv82/wifite"   
                             elsif  wireless == "3-2" 
                                    then system "wget https://raw.githubusercontent.com/FluxionNetwork/fluxion/master/install/install.sh && bash install.sh"             
-                            elsif wireless == 3-3
+                            elsif wireless == "3-3"
                                    then system "https://github.com/savio-code/ghost-phisher"
-                            elsif wireless == 3-4
+                            elsif wireless == "3-4"
                                    then system "git clone https://github.com/wiire/pixiewps" 
-                            elsif wireless == 3-5
+                            elsif wireless == "3-5"
                                    then system "ruby run.rb" 
-                            elsif wireless == ""
-                                   then
-                            system "ruby run.rb"
-
-                              end
+                                 end
   elsif                      
  choice == "4" #webapps attack
  then
@@ -104,7 +100,7 @@ puts ""
                                         system "perl jom.pl"
                                   elsif 
                                     webapplication == "4-3"
-                                    then system ""                 #don't forget this scrite
+                                    then system "perl ip.pl"                 #don't forget this scrite
                                   elsif
                                     webapplication == "4-4"
                                      then system "perl dr.pl"
@@ -135,7 +131,10 @@ scan = gets.chomp
                                     then system "nmap"
                                   elsif 
                                     scan == "5-2"
-                                    then system "python Tn-Scan.py"
+                                    print"drop your server ip"
+                                    ip = gets.chomp
+                                    #{ip}
+                                    system "python Tn-Scan.py #{ip}"
                                   elsif 
                                     scan == "5-3"
                                     then system "git clone github.com/wpscanteam/wpscan"
@@ -144,7 +143,7 @@ scan = gets.chomp
                                     then system "git clone github.com/rezasp/joomscan"
                                   elsif 
                                     scan == "5-5"
-                                    then system "run ruby.rb"
+                                      then system "ruby run.rb"
                                   end
    elsif choice == "6"
     then
@@ -164,9 +163,7 @@ scan = gets.chomp
                       then system "ruby run.rb"
                     end
   elsif choice == "7"
-  puts ""                     
   puts "[*]under constructions"
-  puts ""
   puts "0)back <<"
   print "select your choice > "
  payload = gets.chomp 
