@@ -65,23 +65,23 @@ puts ""
                             elsif wireless == "3-4"
                                    then system "git clone https://github.com/wiire/pixiewps" 
                             elsif wireless == "3-5"
-                                   then system "ruby run.rb" 
+                                   then system (system "reset") && (system "ruby run.rb")
                                  end
   elsif                      
  choice == "4" #webapps attack
  then
      puts ""
-     puts "4-1)wordpress revslider mass shell upload"
+     puts "4-0)wordpress revslider mass shell upload"
      puts ""
-     puts "4-2)joomla com_mezun sql injection"
+     puts "4-1)joomla com_mezun sql injection"
      puts ""
-     puts "4-2)opencart brute force"
+     puts "4-2)opencart brute force (put your sites in opencart.txt"
      puts ""
      puts "4-3)cms grabber from ip"
      puts ""
      puts "4-4)Gs bing dorker"
      puts ""
-     puts "4-5)joomla foxcontact shell upload"
+     puts "4-5)joomla foxcontact shell upload (under constructions)"
      puts ""
      puts "4-6)Drupal exploit add admin"
      puts ""
@@ -91,13 +91,17 @@ puts ""
        
        webapplication = gets.chomp
          
-                                if webapplication == "4-1"
+                                if webapplication == "4-0"
                                     then
                                        system "perl wp.pl"
                                   elsif 
-                                    webapplication == "4-2"
+                                    webapplication == "4-1"
                                     then
-                                        system "perl jom.pl"
+                                   system "perl jom.pl"
+                                 elsif 
+                                   webapplication == "4-2"
+                                   system "python opentcart.py opencart.txt"
+                                   
                                   elsif 
                                     webapplication == "4-3"
                                     then system "perl ip.pl"                 #don't forget this scrite
@@ -109,7 +113,7 @@ puts ""
                                      then system ""                 # don't forget this scripte
                                   elsif
                                     webapplication == "4-7"
-                                     then system "run.rb" and system "clear"                              
+                                     then (system "reset") && (system "ruby run.rb")                              
                                    end
 elsif
   choice == "5"
@@ -143,7 +147,7 @@ scan = gets.chomp
                                     then system "git clone github.com/rezasp/joomscan"
                                   elsif 
                                     scan == "5-5"
-                                      then system "ruby run.rb"
+                                      then (system "reset") && (system "ruby run.rb")
                                   end
    elsif choice == "6"
     then
@@ -160,7 +164,7 @@ scan = gets.chomp
                       then system "perl zone.pl"
                     elsif 
                        zone == "6-2"
-                      then system "ruby run.rb"
+                      then (system "reset") && (system "ruby run.rb")
                     end
   elsif choice == "7"
   puts "[*]under constructions"
@@ -172,12 +176,15 @@ scan = gets.chomp
 end
 
 elsif choice == "8"
- then print "are you sure you want to exit? [ yes / no ]"
-exit =gets.chomp
-if exit == yes
-   then print "Good bye !"
+ then print "are you sure you want to exit? [ yes / no ] : "
+exit = gets.chomp
+if exit == "yes"
+   then 
+   puts""
+   puts "Good bye !"
+   puts ""
  else
-  system "ruby run.pl"
+  system (system "reset") && (system "ruby run.rb")
 end
 
 
