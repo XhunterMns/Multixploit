@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
   
-  #first scripte ruby language i hope u like it copyrights:Xhunter Mns
+  #first scripte i hope u like it copyrights:Xhunter Mns
   #please do not change any of scriptes name 
 puts""  
 puts"[+] Welcome to Mutlixploit v 1.0 [+]"
