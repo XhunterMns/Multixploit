@@ -65,7 +65,7 @@ puts ""
                             elsif wireless == "3-4"
                                    then system "git clone https://github.com/wiire/pixiewps" 
                             elsif wireless == "3-5"
-                                   then system (system "reset") && (system "ruby run.rb")
+                                   then (system "reset") && (system "ruby run.rb")
                                  end
   elsif                      
  choice == "4" #webapps attack
@@ -81,7 +81,7 @@ puts ""
      puts ""
      puts "4-4)Gs bing dorker"
      puts ""
-     puts "4-5)joomla foxcontact shell upload (under constructions)"
+     puts "4-5)joomla foxcontact shell upload"
      puts ""
      puts "4-6)Drupal exploit add admin"
      puts ""
@@ -108,6 +108,14 @@ puts ""
                                   elsif
                                     webapplication == "4-4"
                                      then system "perl dr.pl"
+                                   elsif webapplication =="4-5"
+                                    then print"set target : "
+                                          target = gets.chomp
+                                         print "set CID : "
+                                          CID = gets.chomp
+                                         system "python3 fox.py --url #{target} --cid #{CID}"
+
+
                                   elsif
                                     webapplication == "4-6"
                                      then system ""                 # don't forget this scripte
@@ -152,7 +160,7 @@ scan = gets.chomp
    elsif choice == "6"
     then
     puts""
-    puts"6-1)zone-h poster(you need to create file.txt where you will put your websites)"
+    puts"6-1)zone-h poster(put your websites in zone.txt)"
     puts""
     puts"6-2)back <<"
     puts""
@@ -184,7 +192,7 @@ if exit == "yes"
    puts "Good bye !"
    puts ""
  else
-  system (system "reset") && (system "ruby run.rb")
+   (system "reset") && (system "ruby run.rb")
 end
 
 
