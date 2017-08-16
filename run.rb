@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
   
   #first scripte i hope u like it copyrights:Xhunter Mns
-  #please do not change any of scriptes name 
+  #please do not change any of scriptes name
+system "reset"
 puts""  
 puts"[+] Welcome to Mutlixploit v 1.0 [+]"
 puts""
