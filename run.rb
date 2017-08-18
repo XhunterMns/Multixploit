@@ -72,11 +72,11 @@ puts ""
  choice == "4" #webapps attack
  then
      puts ""
-     puts "4-0)wordpress revslider mass shell upload"
+     puts "4-0)wordpress revslider mass shell upload (put your sites in rev.txt)"
      puts ""
      puts "4-1)joomla com_mezun sql injection"
      puts ""
-     puts "4-2)opencart brute force (put your sites in opencart.txt"
+     puts "4-2)opencart brute force (put your sites in opencart.txt)"
      puts ""
      puts "4-3)cms grabber from ip"
      puts ""
@@ -114,7 +114,7 @@ puts ""
                                           target = gets.chomp
                                          print "set CID : "
                                           CID = gets.chomp
-                                         system "python3 fox.py --url #{target} --cid #{CID}"
+                                         system "python3 fox.py --url #{target} --cid #{CID}" #this one require pip3 colorama
 
 
                                   elsif
