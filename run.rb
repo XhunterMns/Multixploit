@@ -4,7 +4,7 @@
   #please do not change any of scriptes name 
 system "reset"
 puts""  
-puts"[+] Welcome to Mutlixploit v 1.0 [+]"
+puts"[+] Welcome to Mutlixploit v 1.2 [+]"
 puts""
 puts"     ##coded by X-Hunter Mns## "
 puts""
@@ -131,7 +131,7 @@ elsif
   puts""
   puts"5-2)Scan server From ip"
   puts""
-  puts"5-3)wp scan"
+  puts"5-3)Tn wp scan"
   puts""
   puts"5-4)joomscan"
   puts""
