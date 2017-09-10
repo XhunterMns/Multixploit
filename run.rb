@@ -3,19 +3,43 @@
   #first scripte ruby language i hope u like it copyrights:Xhunter Mns
   #please do not change any of scriptes name 
 system "reset"
-require 'colorize'
-puts""  
-puts"[+] Welcome to Mutlixploit v 1.0 [+]".blue
+require 'colorize'                                                                      
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%                                                      %%%%%%%%%%%%%".blue                                                                           
+  puts" %%%%%%%%%%%%                                                      %%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%         %%%%   %%%%   %     %   %   %%%%%%% %%%      %%%%%%%%%%%%%".red
+  puts" %%%%%%%%%%%%        %    % %   %  %     %   %      %     %        %%%%%%%%%%%%%".green   
+  puts" %%%%%%%%%%%%       %      %   %  %     %   %      %     %         %%%%%%%%%%%%%".cyan    
+  puts" %%%%%%%%%%%%      %          %  %     %   %      %     %          %%%%%%%%%%%%%".blue   
+  puts" %%%%%%%%%%%%     %          %  %     %   %      %     %           %%%%%%%%%%%%%".red   
+  puts" %%%%%%%%%%%%    %          %    %%%%    %%%%%  %    %%%           %%%%%%%%%%%%%".green                                                  
+  puts" %%%%%%%%%%%%                                                      %%%%%%%%%%%%%".cyan                        
+  puts" %%%%%%%%%%%%   %   %  %%%   %     %%%   %%%  %%%%%%%              %%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%    % %   %  %  %    %   %   %      %                 %%%%%%%%%%%%%".red
+  puts" %%%%%%%%%%%%     %    %%%   %    % % %   %      %                 %%%%%%%%%%%%%".green 
+  puts" %%%%%%%%%%%%    % %   %     %    %   %   %      %                 %%%%%%%%%%%%%".cyan                                                                            
+  puts" %%%%%%%%%%%%   %   %  %     %%%%  %%%   %%%     %                 %%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%                                                      %%%%%%%%%%%%%".red
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue 
+  puts" %%%%%%%%%%%%%%%%% Tunisan Cyber Resistance Al Fallaga Team   %%%%%%%%%%%%%%%%%%".red                                                                           
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue
+  puts" %%%%%%%%%%%%%%%%%%%%%%    Coded By xHunter_Mns     %%%%%%%%%%%%%%%%%%%%%%%%%%%%".red
+  puts" %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%".blue
+  puts""
+  puts""
+  puts""
+puts"                    [+] Welcome to Mutlixploit v 1.3 [+]".blue
 puts""
-puts"     ##coded by X-Hunter Mns## ".red
 puts""
-
 puts""
-puts "1) install metasploit 32bit".yellow
+puts "1) install metasploit 32bit (F0r Linux Users)".yellow
 puts""
-puts "2) install metasploit 64bit".yellow
+puts "2) install metasploit 64bit (F0r Linux Users)".yellow
 puts""
-puts "3) wirless_attack tools".yellow
+puts "3) wireless attack tools".yellow
 puts""
 puts "4) webapplication attack tools".yellow
 puts""
@@ -164,15 +188,15 @@ end             # don't forget this scripte
 elsif
   choice == "5"
   puts""
-  puts"5-1)jump to nmap"
+  puts"5-1)jump to nmap".cyan
   puts""
-  puts"5-2)Scan server From ip"
+  puts"5-2)Scan server From ip".cyan
   puts""
-  puts"5-3)wp scan"
+  puts"5-3)wp scan".cyan
   puts""
-  puts"5-4)joomscan"
+  puts"5-4)joomscan".cyan
   puts""
-  puts"5-5)back <<"
+  puts"5-5)back <<".cyan
   puts""
   print"select your choice > "
 scan = gets.chomp
@@ -488,15 +512,4 @@ if exit == "yes"
  else
    (system "reset") && (system "ruby run.rb")
 end
-
-
-  
-
-
-                                    
-                                    
-
-                                                                                                                                    end
-
-      
-    
+end
